@@ -41,7 +41,7 @@ code {
 
 /* you can style an icon just like text - changing color and font-size */
 .hamburger-icon {
-  font-size: 5em;
+  font-size: 4em;
   /* adjust size as needed */
 }
 
@@ -61,4 +61,8 @@ code {
 .close-icon {
   font-size: 5em;
   /* adjust size as needed */
+}
+
+.music_icon {
+  font-size: 15em;
 }
