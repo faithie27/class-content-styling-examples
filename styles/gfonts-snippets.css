@@ -1,0 +1,26 @@
+/*
+    Here are some examples of using google fonts.
+    Here is an example font pairing.
+
+    Steps:
+    1. @import the font
+    2. use the font-family
+*/
+
+
+/* open sans - all other text*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* robot slab - headers */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+  
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+

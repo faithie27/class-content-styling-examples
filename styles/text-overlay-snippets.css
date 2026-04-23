@@ -1,0 +1,82 @@
+/*
+    Here is our text overlay example:
+    1.  setup containers in HTML
+    2.  add styling
+*/
+
+/* -------------------------------------- */
+/* 1. using this simple example html */
+
+<div class="image-container">
+  <img src="your-image.jpg" alt="Description of the image">
+  <div class="text-overlay">
+    <h1>Your Overlay Text</h1>
+    <p>More descriptive text here.</p>
+  </div>
+</div>
+
+
+/* -------------------------------------- */
+/* text overlay */
+
+.image-container {
+    position: relative; /* set the position context */
+    width: 100%; /* ... or a specific width */
+}
+
+/* we do not need this - already have it */
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute; /* position relative to closest positioned ancestor */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center the text */
+    color: white;
+    text-align: center;
+    width: 80%; /* adjust width of the text container */
+}
+
+.text-overlay h1 {
+    font-size: 2em;
+}
+
+.text-overlay p {
+    font-size: 1em;
+}
+
+/* to add transparent background */
+.text-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* -------------------------------------- */
+/* to add to our code - wrap the about image (only) */
+
+<div class="image-column">
+
+    <!-- image with overlay -->
+    <div class="image-container">
+
+        <picture>
+            <img src="images/downtown-ithaca.jpg" alt="Downtown Ithaca with a view of Cayuga Lake">
+        </picture>   
+
+        <!-- text overlay -->
+        <div class="text-overlay">
+            <p>More descriptive text here.</p>
+        </div>
+
+    </div>
+
+    <cite class="picture-citation">
+    Source: <a class="text-white" href="https://brand.cornell.edu/design-center/photography/"><cite>Cornell University Branding Office</cite></a>
+    </cite>
+    
+</div>

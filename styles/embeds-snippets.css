@@ -1,0 +1,40 @@
+/*
+    Here are some helper classes to make embeds responsive while maintaining the aspect ration.
+    There are a few different aspect ratios depending on the content.
+    For example:  videos are typically 16x9
+*/
+
+/* make the iframe responsive */
+iframe.ratio-16x9 {
+    aspect-ratio: 16 / 9;
+    height: 100%;
+    width: 100%;
+}
+
+iframe.ratio-4x3 {
+    aspect-ratio: 4 / 3;
+    height: 100%;
+    width: 100%;
+}
+
+iframe.ratio-1x1 {
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    width: 100%;
+}
+
+/* -------------------------------------- */
+/* video example:
+
+    browser link:
+
+    https://www.youtube.com/watch?v=0FEcpKj3h8c
+
+    embed link:
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0FEcpKj3h8c?si=ZpAxvMH8x-JZhdTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    add ratio class:  class="ratio-16x9"
+
+    <iframe class="ratio-16x9" width="560" height="315" src="https://www.youtube.com/embed/0FEcpKj3h8c?si=ZpAxvMH8x-JZhdTv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+*/

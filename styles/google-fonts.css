@@ -1,0 +1,329 @@
+/* Note: No credit is provided for submitting design and/or code that is taken */
+/*       from course-provided examples.                                        */
+/*                                                                             */
+/* Do not copy this code into your project submission and then change it.      */
+/*                                                                             */
+/* Write your own code from scratch. Use this example as a REFERENCE only.     */
+/*                                                                             */
+/* You may not copy this code, change a few names/variables, and then claim it */
+/* as your own. It does not matter if you can explain what every line does.    */
+/*                                                                             */
+/* Examples are provided to help you learn. Copying the example and then       */
+/* changing it a bit, does not help you learn the learning objectives of the   */
+/* assignments. Write your own code from scratch to help you learn it.         */
+
+/* -------------------------------------- */
+/* Fonts - add google font @import and font-family snippets here for future use 
+
+  Open-Sans for text:
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+
+  Robot Slab for headers:
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+  
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+*/
+
+/* -------------------------------------- */
+/* import google fonts */
+
+/* TODO: add google fonts using @import */
+
+/* -------------------------------------- */
+/* page level styling  */
+
+html {
+  /* TODO:: add google font to the entire page */
+  font-family: sans-serif;
+  background-color: #cfcbbf;
+}
+
+body {
+  background-color: #efece5;
+  color: #000000;
+  /* this frames the page content */
+  margin: 0 auto; /* remove default spacing */
+  max-width: 800px; /* frame content */
+}
+
+h1, h2, h3 {
+  /* TODO:: add google font for headers */
+  font-family: serif;
+  font-weight: 700;
+}
+
+h1 {
+  padding: 0.5em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+/* -------------------------------------- */
+/* navigation */
+
+nav menu {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0;
+  padding: 0;
+}
+
+nav menu li {
+  list-style: none;
+}
+
+nav menu li a {
+  display: block;
+  padding: 0.5em;
+  padding-left: 1em;
+
+  border-bottom: 0.25em solid #efece5;
+  color: black;
+
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+nav menu li a:hover {
+  border-bottom: 0.25em solid #55bea9;
+  background-color: #ffffff;
+}
+
+/* -------------------------------------- */
+/* images */
+
+.fit-width {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  min-width: 400px;
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -------------------------------------- */
+/* links to same page section  */
+
+.highlight-links {
+  color: white;
+  background-color: #41c452;
+}
+
+.section-links {
+  /* TODO: */
+}
+
+/* -------------------------------------- */
+/* sections */
+
+.section-spacing {
+  padding: 20px;
+}
+
+.highlight-welcome {
+  color: white;
+  background-color: #f3633e;
+}
+
+.readable {
+  padding: 4px 12px;
+
+  background-color: white;
+  color: rgb(47, 70, 108);
+}
+
+.highlight-about {
+  color: white;
+  background-color: #3e587e;
+}
+
+.highlight-events {
+  background-color: #efece5;
+  color: #000000;  
+}
+
+.highlight-animals {
+  background-color: #ecd7a7;
+  color: #000000;  
+}
+
+.button {
+  display: block;
+  width: max-content;
+
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #55bea9;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.highlight-attractions {
+  background-color: #efece5;
+  color: #000000;  
+}
+
+.highlight-directions {
+  background-color: #ecd7a7;
+  color: #000000;  
+}
+
+/* -------------------------------------- */
+/* text alignment */
+
+.text-center {
+  text-align: center;
+}
+
+/* -------------------------------------- */
+/* picture citations */
+
+.picture-citation {
+  display: block;
+  font-size: 0.8em;
+  text-align: right;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+.picture-citation a {
+  color: inherit;
+}
+
+/* -------------------------------------- */
+/* make the iframe responsive */
+
+iframe.ratio-16x9 {
+  aspect-ratio: 16 / 9; 
+  height: 100%;
+  width: 100%;
+}
+
+iframe.ratio-4x3 {
+  aspect-ratio: 4 / 3; 
+  height: 100%;
+  width: 100%;
+}
+
+iframe.ratio-1x1 {
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  width: 100%;
+}
+
+/* -------------------------------------- */
+/* text overlay */
+
+.image-container {
+  position: relative; /* set the position context */
+  width: 100%; /* ... or a specific width */
+}
+
+.text-overlay {
+  position: absolute; /* position relative to closest positioned ancestor */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* center the text */
+  color: white;
+  text-align: center;
+  width: 80%; /* adjust width of the text container */
+}
+
+.text-overlay h1 {
+  font-size: 2em;
+}
+
+.text-overlay p {
+  font-size: 1em;
+}
+
+/* to add transparent background */
+.text-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* -------------------------------------- */
+/* flex side-by-side */
+
+.side-by-side {
+  display: flex; /* enable flexbox */
+  flex-direction: row; /* align content side-by-side */
+  align-items: center; /* vertically align items */
+}
+
+.image-column, .text-column {
+  flex: 1; /* distribute space equally */
+  min-width: 200px; /* minimum width for each column */
+  padding: 0.5em; /* add some padding */
+  box-sizing: border-box; /* include padding in width calculation */
+}
+
+.image-column img {
+  max-width: 100%; /* make image responsive */
+  height: auto;
+  display: block; /* remove extra space below image */
+}
+
+/* Note: No credit is provided for submitting design and/or code that is taken */
+/*       from course-provided examples. This includes the Ithaca Zoo example.  */
+
+/* -------------------------------------- */
+/* media queries */
+
+/* narrow media query */
+@media (max-width: 700px) {
+
+  /* header */
+  header {
+    padding: 0; /* remove extra space */
+
+    flex-direction: column; /* stack */
+    align-items: stretch; /* use all width */
+    gap: 0; /* remove any space between child containers */
+  }
+
+  header h1 {
+    background-color: #cfcbbf; /* change color to highlight */
+    padding: 0.5em;
+    font-size: 2.5em;
+  }
+
+  /* nav menu */
+  nav menu {
+    flex-direction: column; /* stack content */
+  }
+
+  nav menu li a {
+    width: 100%; /* use full width */
+    border-left: 8px solid #efece5; /* move border to left side */
+  }
+
+  nav menu li a:hover {
+    background-color: #d0e3d9;
+    border-left: 8px solid #55bea9; /* add left border */
+    border-bottom: none; /* remove bottom border */
+    padding-bottom: 16px;
+  }
+
+  /* stack content */
+  .side-by-side {
+    flex-direction: column; /* stack content */
+  }

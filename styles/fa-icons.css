@@ -1,0 +1,35 @@
+/*
+    fa-icons.css
+
+    How To:
+        go to fontawesome.com/start sign up and get the kit
+        include the kit JS at the end of each HTML file
+        go to fontawesome.com/icons
+        pick an icon
+        add the icon snippet to the HTML
+        style (size & color & border) the icon like text
+*/
+
+body {
+    background-color: #CAD8DE;
+    font-family: Consolas, "courier new";
+}
+
+hr {
+    border-color: rgb(1, 8, 14);
+}
+
+code {
+    font-family: Consolas, "courier new";
+    color: blue;
+    background-color: #ebf1f4;
+    padding: 2px;
+}
+
+/* ------------------------------------ */
+/* font awesome icons - change as need */
+
+.linkedin-icon {
+    font-size: 10em;
+    color: red;
+}

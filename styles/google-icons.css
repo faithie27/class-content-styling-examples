@@ -1,0 +1,64 @@
+/*
+    google-icons.css
+
+    How To:
+        go to fonts.google.com/icons
+        pick an icon and finds its name
+        link in the google icon CSS in your html page
+        add the icon to the HTML
+        style (size & color & border) the icon like text
+*/
+
+/* the google icons CSS is a bit different than font awesome - it uses the "material-icons" class and the icon name as text content of the element */
+
+body {
+  background-color: #CAD8DE;
+  font-family: Consolas, "courier new";
+}
+
+hr {
+  border-color: rgb(1, 8, 14);
+}
+
+code {
+  font-family: Consolas, "courier new";
+  color: blue;
+  background-color: #ebf1f4;
+  padding: 2px;
+}
+
+/* ------------------------------------ */
+/* hamburger button & icon - change as need */
+
+.hamburger-button {
+  background: red;
+  border: solid;
+  border-radius: 10%;
+  cursor: pointer;
+  display: block;
+  /* ensures that the button takes up the correct space */
+}
+
+/* you can style an icon just like text - changing color and font-size */
+.hamburger-icon {
+  font-size: 5em;
+  /* adjust size as needed */
+}
+
+/* ------------------------------------ */
+/* close button & icon - change as need */
+
+.close-button {
+  background: none;
+  /* transparent */
+  border: none;
+  cursor: pointer;
+  display: block;
+  /* ensures that the button takes up the correct space */
+}
+
+/* you can style an icon just like text - changing color and font-size */
+.close-icon {
+  font-size: 5em;
+  /* adjust size as needed */
+}
